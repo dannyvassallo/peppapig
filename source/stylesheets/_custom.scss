@@ -4,8 +4,8 @@ body{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .header{
@@ -37,6 +37,19 @@ body{
 .date, .venue, .date-divider{
   margin: 0;
   display: inline;
+}
+
+.smoke{
+  background: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/smoke.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
 }
 
 // FORMS
