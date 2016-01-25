@@ -1,1 +1,40 @@
-// PUT CUSTOM SCSS / SASS HERE
+
+body{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/grunge.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.header{
+  margin-bottom: 0;
+}
+
+.full-w{
+  width: 100%;
+}
+
+.margin-top{
+  margin-top: 2%;
+}
+
+.support{
+  margin-top: -25%;
+}
+
+.collection,
+.collection-header,
+.collection-item{
+  border-color: transparent;
+}
+
+.collection-item{
+  line-height: 2.5rem !important;
+}
+
+.date, .venue, .date-divider{
+  margin: 0;
+  display: inline;
+}
