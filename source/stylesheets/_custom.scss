@@ -8,6 +8,10 @@ body{
   text-transform: uppercase;
 }
 
+#hidden_iframe{
+  display: none;
+}
+
 .header{
   margin-bottom: 0;
 }
@@ -87,4 +91,39 @@ body{
     padding: 48px;
     box-shadow: 0px 0px 0px 10px #fff;
     // background-color: white;
+}
+
+span.error{
+  position: relative;
+  display: block;
+  @extend .red-text;
+}
+
+.error-box{
+  height: 25px;
+}
+
+
+input:not([type]):focus:not([readonly]),
+input:not([email]):focus:not([readonly]){
+  border-bottom: 1px solid #00bcd4;
+  box-shadow: 0 1px 0 0 #00bcd4;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input:not([email]):focus:not([readonly])+label,{
+  color: #00bcd4;
+}
+
+input[type="checkbox"].filled-in:checked+label:after {
+  border: 2px solid #00bcd4;
+  background-color: #00bcd4;
+}
+
+input, select, textarea{
+    color: #fff;
+}
+
+textarea:focus, input:focus {
+    color: #fff;
 }

@@ -44,6 +44,7 @@
       if (response && response.post_id) {
         // Successful Facebook Share Callback
         $('#fbshareinput').prop('checked', true);
+        $('#fbshareinput').next('.error-box').next('span.error').html('');
       } else {
         // Unsuccessful Facebook Share Callback
         $('#fbshareinput').prop('checked', false);

@@ -1,5 +1,9 @@
 //= require jquery
+//= require _jquery.scrollTo.min.js
 //= require materialize-sprockets
 //= require _init-materialize
 //= require _jquery.csv-0.71
+//= require _jquery.validate.min
+//= require _additional-methods.min
+//= require _validate-form
 //= require _custom
