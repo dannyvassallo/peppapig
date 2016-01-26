@@ -49,12 +49,29 @@ $(function(){
   setTimeout(function(){
     $('.support-img-left').css('visibility','visible').addClass('slideRight');
     $('.support-img-right').css('visibility','visible').addClass('slideLeft');
-  },1500);
+  }, 1500);
+  setTimeout(function(){
+    prize2Show();
+  }, 2000);
 });
 
 // scrollfire
+function contestShow(){
+  $('#contest-form').css('visibility', 'visible').addClass('slideRight');
+  $('.prize').css('visibility', 'visible').addClass('slideLeft');
+}
+
+function datesShow(){
+  $('#tour-dates').css('visibility', 'visible').addClass('slideUp');
+}
+
+function prize2Show(){
+  $('.prize2').css('visibility', 'visible').hide().fadeIn();
+}
+
 
 var options = [
-  {selector: '#contest-form', offset: 100, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },
+  {selector: '#contest-form', offset: 400, callback: 'contestShow();'},
+  {selector: '#tour-dates', offset: 400, callback: 'datesShow();'}
 ];
 Materialize.scrollFire(options);
