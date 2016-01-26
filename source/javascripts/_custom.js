@@ -28,7 +28,12 @@ $('input').focus(function(){
     query.addClass('active');
   }
 }).blur(function(){
-  if(this.type != 'checkbox'){
+  if($(this).val() != ''){
+    // do nothing
+  } else if(this.type != 'checkbox'){
+    var query = $(this).next('label');
+    query.removeClass('active');
+  } else {
     var query = $(this).next('label');
     query.removeClass('active');
   }
