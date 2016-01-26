@@ -38,3 +38,23 @@ $('input').focus(function(){
     $("label[for='"+query+"']").removeClass('active');
   }
 });
+
+
+// animation
+
+$(function(){
+  setTimeout(function(){
+    $('.header-img').css('visibility','visible').hide().fadeIn(1000);
+  }, 1000);
+  setTimeout(function(){
+    $('.support-img-left').css('visibility','visible').addClass('slideRight');
+    $('.support-img-right').css('visibility','visible').addClass('slideLeft');
+  },1500);
+});
+
+// scrollfire
+
+var options = [
+  {selector: '#contest-form', offset: 100, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },
+];
+Materialize.scrollFire(options);

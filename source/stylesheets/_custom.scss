@@ -127,3 +127,9 @@ input, select, textarea{
 textarea:focus, input:focus {
     color: #fff;
 }
+
+.header-img,
+.support-img-left,
+.support-img-right{
+  visibility: hidden;
+}
