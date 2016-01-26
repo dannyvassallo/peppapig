@@ -21,10 +21,15 @@ function dateHandler(data){
   });
 }
 
+// Fix inputs
 $('input').focus(function(){
-  var query = $(this).next('label');
-  query.addClass('active');
+  if(this.type != 'checkbox'){
+    var query = $(this).next('label');
+    query.addClass('active');
+  }
 }).blur(function(){
-  var query = $(this).next('label');
-  query.removeClass('active');
+  if(this.type != 'checkbox'){
+    var query = $(this).next('label');
+    query.removeClass('active');
+  }
 });
