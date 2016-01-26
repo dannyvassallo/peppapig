@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row valign-wrapper">
     <form id="contest-form" class="col s12 m8 offset-m2 l5 offset-l1">
       <div class="center-align">
         <h2 class="white-text">ENTER HERE</h2>
@@ -13,10 +13,13 @@
         <label for="email">Email</label>
       </div>
       <div class="input-field">
-        <div class="col s12 center-align mar-top">
+        <div class="col s12 center-align margin-top">
           <button class="btn waves-effect waves-light cyan" type="submit" name="action">Enter</button>
         </div>
       </div>
     </form>
+    <div class="col s12 m8 offset-m2 l5 hide-on-med-and-down">
+      <img class="full-w margin-top" src="<%= lorem.image('640x640', :background_color => '333', :color => 'fff') %>">
+    </div>
   </div>
 </div>
