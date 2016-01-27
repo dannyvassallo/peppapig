@@ -15,6 +15,7 @@ var successMsg = "<div id=\"thankyou\" class=\"col-xs-12 cyan-text\"><h2 class=\
 
 
 $("#contest-form").validate({
+  ignore: "",
   focusInvalid: false,
   rules: {
     // first name
@@ -84,7 +85,7 @@ $("#contest-form").validate({
       required: "Please agree to the rules."
     },
     'entry.1168099912':{
-      required: "Please choose a tour date.."
+      required: "Please choose a tour date."
     },
     'entry.1001572892': {
       required: "You must share on FB to complete your entry."
@@ -109,8 +110,7 @@ $("#contest-form").validate({
   errorElement : 'span',
   errorPlacement: function (error, element) {
     var elementId = element[0].id;
-    if(elementId == 'fbshareinput'){
-      console.log(elementId);
+    if(elementId == 'fbshareinput' || elementId == 'tour-input'){
       error.insertAfter($('#'+elementId).next('.error-box'));
     } else {
       error.insertAfter($(element).parent().next('.error-box'));
