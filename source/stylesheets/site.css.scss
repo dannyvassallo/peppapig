@@ -1,11 +1,13 @@
+@import "font-settings";
 @charset "utf-8";
 @import "normalize";
 // BEGIN MATERIALIZE
 @import "materialize/components/color";
 // You can customize the theme colors here:
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("cyan", "base") !default;
 @import 'materialize';
 // END MATERIALIZE
 @import "font-awesome";
 @import "stickyfooter";
+@import "animation";
 @import "custom";

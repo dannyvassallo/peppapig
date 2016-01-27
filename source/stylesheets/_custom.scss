@@ -1,1 +1,189 @@
-// PUT CUSTOM SCSS / SASS HERE
+
+body{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/grunge.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  overflow-x: hidden;
+}
+
+#hidden_iframe{
+  display: none;
+}
+
+.header{
+  margin-bottom: 0;
+}
+
+.full-w{
+  width: 100%;
+}
+
+.margin-top{
+  margin-top: 2%;
+}
+
+.support{
+  margin-top: -25%;
+}
+
+.collection,
+.collection-header,
+.collection-item{
+  border-color: transparent;
+}
+
+.collection-item{
+  line-height: 2.5rem !important;
+}
+
+.date, .venue, .date-divider{
+  margin: 0;
+  display: inline;
+}
+
+.smoke{
+  background: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/smoke.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+// FORMS
+
+/* label color */
+ .input-field label {
+   color: #fff;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #fff;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #fff;
+ }
+
+#contest-form {
+    border: 10px solid #0097a7;
+    padding: 48px;
+    box-shadow: 0px 0px 0px 10px #fff;
+    // background-color: white;
+}
+
+span.error{
+  position: relative;
+  display: block;
+  @extend .red-text;
+}
+
+.error-box{
+  height: 25px;
+}
+
+
+input:not([type]):focus:not([readonly]),
+input:not([email]):focus:not([readonly]){
+  border-bottom: 1px solid #00bcd4;
+  box-shadow: 0 1px 0 0 #00bcd4;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input:not([email]):focus:not([readonly])+label,{
+  color: #00bcd4;
+}
+
+input[type="checkbox"].filled-in:checked+label:after {
+  border: 2px solid #00bcd4;
+  background-color: #00bcd4;
+}
+
+input, select, textarea{
+    color: #fff;
+}
+
+textarea:focus, input:focus {
+    color: #fff;
+}
+
+.header-img,
+.support-img-left,
+.support-img-right,
+#contest-form,
+.prize,
+.prize2,
+#tour-dates,
+.enter,
+.near{
+  visibility: hidden;
+}
+
+// breathing
+
+.breathing{
+  -webkit-animation: breathing 40s ease-out infinite normal;
+  animation: breathing 40s ease-out infinite normal;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+footer{
+  z-index: 999999999;
+}
+
+// dropdown
+
+.dropdown-content li>span {
+  color: #00bcd4;
+}

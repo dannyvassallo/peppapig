@@ -5,20 +5,19 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <%= partial 'partials/meta-seo' %>
     <%= stylesheet_link_tag :site %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial 'layouts/partials/navbar' %>
+    <%= javascript_include_tag :init_facebook %>
     <main>
       <!-- CONTENT SHOWS HERE -->
       <%= yield %>
     </main>
+    <div class="hide-on-med-and-down smoke breathing"></div>
     <%= partial 'layouts/partials/footer' %>
     <%= javascript_include_tag :all %>
   </body>
