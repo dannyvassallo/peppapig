@@ -75,3 +75,10 @@ var options = [
   {selector: '#tour-dates', offset: 400, callback: 'datesShow();'}
 ];
 Materialize.scrollFire(options);
+
+// autocomplete
+
+
+$("#email").select2({
+  maximumSelectionLength: 1
+});
