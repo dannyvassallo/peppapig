@@ -57,6 +57,9 @@ $("#contest-form").validate({
     },
     'entry.1001572892': {
       required: true
+    },
+    'entry.1168099912':{
+      required: true
     }
   },
   messages: {
@@ -79,6 +82,9 @@ $("#contest-form").validate({
     },
     'entry.1624692557': {
       required: "Please agree to the rules."
+    },
+    'entry.1168099912':{
+      required: "Please choose a tour date.."
     },
     'entry.1001572892': {
       required: "You must share on FB to complete your entry."
