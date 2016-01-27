@@ -34,11 +34,11 @@
     {
       // SHARE INFO
       method: 'feed',
-      name: 'Facebook Dialogs', // name of the product or content you want to share
-      link: 'https://developers.facebook.com/docs/reference/dialogs/', // link back to the product or content you are sharing
-      picture: 'http://fbrell.com/f8.jpg', // path to an image you would like to share with this content
-      caption: 'Reference Documentation', // caption
-      description: 'Dialogs provide a simple, consistent interface for applications to interface with users.' // description of your product or content
+      name: 'The Fight For Something Tour', // name of the product or content you want to share
+      link: 'http://thefightforsomethingtour.com', // link back to the product or content you are sharing
+      picture: 'https://s3.amazonaws.com/myfangate.com/fightforsomething/shareimage.jpg', // path to an image you would like to share with this content
+      caption: 'http://thefightforsomethingtour.com', // caption
+      description: 'ENTER TO WIN TICKETS TO A SHOW NEAR YOU!' // description of your product or content
     },
     function(response) {
       if (response && response.post_id) {
