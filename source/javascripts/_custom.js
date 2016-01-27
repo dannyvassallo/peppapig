@@ -33,6 +33,7 @@ function addDatesToDropDown(data){
     $('select').material_select();
     $('.dropdown-content li').on('click', function(){
       $('#tour-input').val($('.select-dropdown').val());
+      $('#tour-input').next('.error-box').next('span').html('');
     });
   });
 }
