@@ -66,6 +66,8 @@ $(function(){
   setTimeout(function(){
     $('.support-img-left').css('visibility','visible').addClass('slideRight');
     $('.support-img-right').css('visibility','visible').addClass('slideLeft');
+    $('.enter').css('visibility','visible').addClass('slideRight');
+    $('.near').css('visibility','visible').addClass('slideLeft');
   }, 1500);
   setTimeout(function(){
     prize2Show();
