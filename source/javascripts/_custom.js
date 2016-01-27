@@ -77,8 +77,3 @@ var options = [
 Materialize.scrollFire(options);
 
 // autocomplete
-
-
-$("#email").select2({
-  maximumSelectionLength: 1
-});

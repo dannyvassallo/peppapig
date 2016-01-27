@@ -6,5 +6,4 @@
 //= require _jquery.validate.min
 //= require _additional-methods.min
 //= require _validate-form
-//= require _select2.full.min
 //= require _custom

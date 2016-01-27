@@ -2,4 +2,7 @@
 
 // Init side nav
 $(".button-collapse").sideNav();
-// Init sticky footer
+// Init select
+$(document).ready(function() {
+  $('select').material_select();
+});
