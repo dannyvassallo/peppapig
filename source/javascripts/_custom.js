@@ -16,8 +16,10 @@ function dateHandler(data){
   $(parsed).each(function(){
     var tourDate = this.date;
     var venue = this.venue;
+    var location = this.location;
     var href = this.link;
-    var dateConstructor = "<li class=\"collection-item cyan white-text ticket-links\"><div><p class=\"date\">"+tourDate+"</p> <p class=\"date-divider\">-</p> <p class=\"venue\">"+venue+"</p><a target=\"_blank\" href=\""+href+"\" class=\"secondary-content btn btn-small white\"><i class=\"fa fa-ticket cyan-text\"></i></a></div></li>";
+    var vip = this.vip;
+    var dateConstructor = "<li class=\"collection-item cyan white-text ticket-links\"><div><p class=\"date\">"+tourDate+"</p> <p class=\"date-divider\">-</p> <p class=\"venue\">"+location+"<span class=\"hide-on-small-only\"> @ "+venue+"</span></p><div class=\"secondary-content\"><a target=\"_blank\" href=\""+href+"\" class=\"tix btn btn-small white\"><i class=\"fa fa-ticket cyan-text\"></i></a><a target=\"_blank\" href=\""+vip+"\" class=\"tix btn btn-small cyan darken-1 white-text\"><i class=\"fa fa-ticket white-text\"></i> VIP</a></div></div></li>";
     $('#tour-dates').append(dateConstructor);
   });
 }
@@ -26,9 +28,10 @@ function addDatesToDropDown(data){
   var parsed = $.csv.toObjects(data);
   $(parsed).each(function(){
     var venue = this.venue;
+    var location = this.location;
     $('#tour-dropdown').append($('<option>', {
-      value: venue,
-      text : venue
+      value: location+" @ "+venue,
+      text : location+" @ "+venue
     }));
     $('select').material_select();
     $('.dropdown-content li').on('click', function(){
