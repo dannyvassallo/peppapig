@@ -4,7 +4,7 @@
 "3/3/16","Pontiac, MI","The Crofoot Ballroom","http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=6309205&REFERRAL_ID=tmfeed","https://soundrink.com/#/event/the-fight-for-something-tour-3-03-detroit-mi"
 "3/4/16","Buffalo, NY","Waiting Room","http://www.ticketfly.com/event/996353-tonight-a?utm_medium=906137","https://soundrink.com/#/event/the-fight-for-something-tour-3-04-buffalo-ny"
 "3/5/16","New York, NY","Irving Plaza","http://concerts.livenation.com/event/00004F5DC4AB4A24?_ga=1.111497223.2036774420.1453764696","https://soundrink.com/#/event/the-fight-for-something-tour-3-05-new-york-ny"
-"3/6/16","Cambridge, MA","The Sinclair","http://www.ticketmaster.com/event/01004F5DC47E437A?_ga=1.74272913.2036774420.1453764696","https://soundrink.com/#/event/the-fight-for-something-tour-3-06-boston-ma"
+"3/6/16","Cambridge, MA","The Sinclair","sold out","sold out"
 "3/8/16","Baltimore, MD","Baltimore Soundstage","http://www.ticketfly.com/event/995361","https://soundrink.com/#/event/the-fight-for-something-tour-3-08-baltimore-md"
 "3/9/16","Philadelphia, PA","Union Transfer","http://www.ticketfly.com/purchase/event/996973?utm_medium=906137","https://soundrink.com/#/event/the-fight-for-something-tour-3-09-philadelphia-pa1"
 "3/10/16","Greensboro, NC","Greene Street Club","http://www.ticketfly.com/purchase/event/996189?utm_medium=906137","https://soundrink.com/#/event/the-fight-for-something-tour-3-10-greensboro-nc"
