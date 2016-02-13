@@ -1,3 +1,28 @@
+var currentDevice;
+//Detection Script//
+var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
+var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
+var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
+var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
+//iOS//
+if(iPadAgent || iPodAgent){
+  currentDevice = "iDevice"
+}
+//Android//
+else if(AndroidAgent){
+  currentDevice = "Android"
+}
+//Other//
+else{
+  currentDevice = "Computer"
+}
+
+$(function(){
+  if(currentDevice == "iDevice" || currentDevice == "Android"){
+    $('#fbshareinput').prop('checked', true);
+  }
+});
+
 // GET DATES FROM TEXT FILE
 $(document).ready(function() {
   $.ajax({
