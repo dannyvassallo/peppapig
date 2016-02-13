@@ -70,38 +70,38 @@ $('input').focus(function(){
 
 // animation
 
-$(function(){
-  setTimeout(function(){
-    $('.header-img').css('visibility','visible').hide().fadeIn(1000);
-  }, 1000);
-  setTimeout(function(){
-    $('.support-img-left').css('visibility','visible').addClass('slideRight');
-    $('.support-img-right').css('visibility','visible').addClass('slideLeft');
-    $('.enter').css('visibility','visible').addClass('slideRight');
-    $('.near').css('visibility','visible').addClass('slideLeft');
-  }, 1500);
-  setTimeout(function(){
-    prize2Show();
-  }, 2000);
-});
+// $(function(){
+//   setTimeout(function(){
+//     $('.header-img').css('visibility','visible').hide().fadeIn(1000);
+//   }, 1000);
+//   setTimeout(function(){
+//     $('.support-img-left').css('visibility','visible').addClass('slideRight');
+//     $('.support-img-right').css('visibility','visible').addClass('slideLeft');
+//     $('.enter').css('visibility','visible').addClass('slideRight');
+//     $('.near').css('visibility','visible').addClass('slideLeft');
+//   }, 1500);
+//   setTimeout(function(){
+//     prize2Show();
+//   }, 2000);
+// });
 
-// scrollfire
-function contestShow(){
-  $('#contest-form').css('visibility', 'visible').addClass('slideRight');
-  $('.prize').css('visibility', 'visible').addClass('slideLeft');
-}
+// // scrollfire
+// function contestShow(){
+//   $('#contest-form').css('visibility', 'visible').addClass('slideRight');
+//   $('.prize').css('visibility', 'visible').addClass('slideLeft');
+// }
 
-function datesShow(){
-  $('#tour-dates').css('visibility', 'visible').addClass('slideUp');
-}
+// function datesShow(){
+//   $('#tour-dates').css('visibility', 'visible').addClass('slideUp');
+// }
 
-function prize2Show(){
-  $('.prize2').css('visibility', 'visible').hide().fadeIn();
-}
+// function prize2Show(){
+//   $('.prize2').css('visibility', 'visible').hide().fadeIn();
+// }
 
 
-var options = [
-  {selector: '#contest-form', offset: 400, callback: 'contestShow();'},
-  {selector: '#tour-dates', offset: 400, callback: 'datesShow();'}
-];
-Materialize.scrollFire(options);
+// var options = [
+//   {selector: '#contest-form', offset: 400, callback: 'contestShow();'},
+//   {selector: '#tour-dates', offset: 400, callback: 'datesShow();'}
+// ];
+// Materialize.scrollFire(options);
