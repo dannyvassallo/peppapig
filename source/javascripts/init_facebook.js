@@ -5,7 +5,7 @@
   //        Facebook API HOOKS       //
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1558392051152227',
+      appId      : '1520962544877525',
       xfbml      : true,
       version    : 'v2.5'
     });
@@ -34,11 +34,11 @@
     {
       // SHARE INFO
       method: 'feed',
-      name: 'The Fight For Something Tour', // name of the product or content you want to share
-      link: 'http://thefightforsomethingtour.com', // link back to the product or content you are sharing
-      picture: 'https://s3.amazonaws.com/myfangate.com/fightforsomething/shareimage.jpg', // path to an image you would like to share with this content
-      caption: 'http://thefightforsomethingtour.com', // caption
-      description: 'ENTER TO WIN TICKETS TO A SHOW NEAR YOU!' // description of your product or content
+      name: 'Mayday Parade | Share To Win', // name of the product or content you want to share
+      link: 'http://maydayparade.com/lettinggo', // link back to the product or content you are sharing
+      picture: 'https://s3.amazonaws.com/myfangate.com/mayday2016/shareimage.jpg', // path to an image you would like to share with this content
+      caption: 'http://maydayparade.com/lettinggo', // caption
+      description: 'SHARE THE NEW MUSIC VIDEO FOR "LETTING GO" TO WIN WARPED TOUR TICKETS + MORE' // description of your product or content
     },
     function(response) {
       if (response && response.post_id) {
