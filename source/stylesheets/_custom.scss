@@ -195,3 +195,70 @@ footer:before{
 .thanks{
   color: black !important;
 }
+
+
+@media #{$small-and-down} {
+  .album-info{
+    h3{
+      font-size: 2.92rem;
+    }
+    h4{
+      font-size: 2.28rem;
+    }
+    .itunes-btn{
+      max-width: 200px;
+    }
+  }
+}
+@media #{$medium-and-up} {
+  .album-info{
+    h3{
+      font-size: 2rem;
+    }
+    h4{
+      font-size: 1.5rem;
+    }
+    .itunes-btn{
+      max-width: 150px;
+    }
+  }
+}
+@media #{$large-and-up} {
+  .album-info{
+    h3{
+      font-size: 2.92rem;
+    }
+    h4{
+      font-size: 2.28rem;
+    }
+    .itunes-btn{
+      max-width: 200px;
+    }
+  }
+}
+@media (min-width: 770px) and (max-width: 1400px) {
+  .album-info{
+    h3{
+      font-size: 2rem;
+    }
+    h4{
+      font-size: 1.5rem;
+    }
+    .itunes-btn{
+      max-width: 150px;
+    }
+  }
+}
+@media (min-width: 600px) and (max-width: 730px) {
+  .album-info{
+    h3{
+      font-size: 1.5rem;
+    }
+    h4{
+      font-size: 1rem;
+    }
+    .itunes-btn{
+      max-width: 150px;
+    }
+  }
+}
