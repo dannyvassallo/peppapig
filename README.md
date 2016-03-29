@@ -1,4 +1,4 @@
-#Something To Fight For Tour
+#Mayday Parade 2016
 
 ####What does it do?
 This boilerplate is set up to increase my workflow. Hopefully, this can also help you on your way.
@@ -21,16 +21,16 @@ There is also a partial/template for meta info on most social networks.
 ####Getting Started
 Clone the repo using the GUI or terminal. To do so in terminal, use the following:
 ```shell
-git clone https://github.com/dannyvassallo/something-to-fight-for.git
-cd something-to-fight-for
+git clone https://github.com/dannyvassallo/mayday.git
+cd mayday
 ```
 
-From the "something-to-fight-for" directory, install the gems by running the following:
+From the "mayday" directory, install the gems by running the following:
 ```shell
 bundle install
 ```
 
-To fire up the server while in the "something-to-fight-for" directory use this command:
+To fire up the server while in the "mayday" directory use this command:
 ```shell
 middleman s
 ```
@@ -46,7 +46,7 @@ If you find yourself curious as to what directory you are in use the following i
 ```shell
 pwd
 ```
-It should turn up "something-to-fight-for"
+It should turn up "mayday"
 
 ####Analytics Setup
 
