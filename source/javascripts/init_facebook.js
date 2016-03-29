@@ -35,9 +35,9 @@
       // SHARE INFO
       method: 'feed',
       name: 'Mayday Parade | Share To Win', // name of the product or content you want to share
-      link: 'http://maydayparade.com/lettinggo', // link back to the product or content you are sharing
+      link: 'http://maydayparade.com', // link back to the product or content you are sharing
       picture: 'https://s3.amazonaws.com/myfangate.com/mayday2016/shareimage.jpg', // path to an image you would like to share with this content
-      caption: 'http://maydayparade.com/lettinggo', // caption
+      caption: 'http://maydayparade.com', // caption
       description: 'SHARE THE NEW MUSIC VIDEO FOR "LETTING GO" TO WIN WARPED TOUR TICKETS + MORE' // description of your product or content
     },
     function(response) {
