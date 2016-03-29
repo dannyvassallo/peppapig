@@ -1,13 +1,18 @@
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../fonts/HelveticaNeueLTPro-BlkCn.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-BlkCn.otf')  format('opentype'),
-       url('../fonts/HelveticaNeueLTPro-BlkCn.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-BlkCn.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-BlkCn.svg#HelveticaNeueLTPro-BlkCn') format('svg');
-  font-weight: normal;
+  font-family:'AmericanTypewriter-Bold';
+  src: url('../fonts/AmericanTypewriter-Bold_gdi.eot');
+  src: url('../fonts/AmericanTypewriter-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AmericanTypewriter-Bold_gdi.woff') format('woff'),
+    url('../fonts/AmericanTypewriter-Bold_gdi.ttf') format('truetype'),
+    url('../fonts/AmericanTypewriter-Bold_gdi.svg#AmericanTypewriter-Bold') format('svg');
+  font-weight: 700;
   font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
 }
 
 h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'AmericanTypewriter-Bold';
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
@@ -15,7 +20,7 @@ h1 {
   line-height: 26.4px;
 }
 h3 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'AmericanTypewriter-Bold';
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -23,7 +28,7 @@ h3 {
   line-height: 15.4px;
 }
 p {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'AmericanTypewriter-Bold';
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -31,7 +36,7 @@ p {
   line-height: 20px;
 }
 blockquote {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'AmericanTypewriter-Bold';
   font-size: 21px;
   font-style: normal;
   font-variant: normal;
@@ -39,7 +44,7 @@ blockquote {
   line-height: 30px;
 }
 pre {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'AmericanTypewriter-Bold';
   font-size: 13px;
   font-style: normal;
   font-variant: normal;
