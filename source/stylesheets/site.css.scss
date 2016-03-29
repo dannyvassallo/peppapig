@@ -4,7 +4,7 @@
 // BEGIN MATERIALIZE
 @import "materialize/components/color";
 // You can customize the theme colors here:
-$primary-color: color("cyan", "base") !default;
+$primary-color: color("grey", "darken-4") !default;
 @import 'materialize';
 // END MATERIALIZE
 @import "font-awesome";

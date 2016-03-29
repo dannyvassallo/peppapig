@@ -91,3 +91,20 @@ $('input').focus(function(){
     $("label[for='"+query+"']").removeClass('active');
   }
 });
+
+
+function resizeAlbumInfo(){
+  $('.album-info').height($('.albummini').height());
+  $('.album-info .valign-wrapper').height($('.albummini').height());
+}
+
+$(function(){
+  resizeAlbumInfo();
+  $('.albummini').on('load', function(){
+    resizeAlbumInfo();
+  });
+});
+
+$(window).resize(function(){
+  resizeAlbumInfo();
+});

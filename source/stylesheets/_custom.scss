@@ -1,11 +1,72 @@
 $form-color: #000;
 
+.header{
+  margin-top: 2%;
+}
+
+.logo{
+  opacity: .7;
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+  transform: rotate(3deg);
+}
+
+.album-info{
+  h2,h3,h4{
+    margin: 0 auto !important;
+  }
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}
+
+.video-container{
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  transform: rotate(-1deg);
+}
+
+#contest-form{
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+  transform: rotate(1deg);
+}
+
+.valign{
+  width: 100%;
+}
+
+.itunes-btn{
+  max-width: 200px;
+  width: 100%;
+}
+
+.cta{
+  margin-bottom: 2%;
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  transform: rotate(-1deg);
+}
+
+body{
+  font-family:'AmericanTypewriter-Bold';
+  text-transform: uppercase;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/paperbg.jpg');
+  background-repeat: repeat;
+}
+
 #hidden_iframe{
   display: none;
 }
 
 .full-w{
   width: 100%;
+}
+
+.albummini{
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
 }
 // FORMS
 
@@ -73,7 +134,30 @@ textarea:focus, input:focus {
 }
 
 footer{
-  z-index: 999999999;
+  z-index: 9;
+  background-color: black !important;
+  h1, img{
+    z-index: 11;
+  }
+  .row{
+    position: relative;
+    z-index: 999999999999999999999;
+  }
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+footer:before{
+  content: "";
+  background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/blacklines.png');
+  background-repeat: repeat;
+  position: absolute;
+  margin-top: -122px;
+  height: 187px;
+  width: 100%;
+  z-index: 10;
 }
 
 // dropdown
@@ -89,4 +173,21 @@ footer{
 
 .tix:nth-child(odd){
   margin-right: 8px;
+}
+
+.navtear{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/blacklines2.png');
+  background-repeat: repeat;
+  position: relative;
+  margin-top: -122px;
+  height: 187px;
+  width: 100%;
+  z-index: 10;
+  background-position: right center;
+}
+
+.social-head{
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  transform: rotate(-1deg);
 }
