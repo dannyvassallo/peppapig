@@ -50,7 +50,7 @@ configure :build do
   # Minify CSS on build
   activate :minify_css
   # Minify HTML on build
-  activate :minify_html
+  # activate :minify_html
   # Minify Javascript on build
   activate :minify_javascript
 end
