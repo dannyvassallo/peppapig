@@ -14,7 +14,7 @@
   <body class="<%= page_classes %>">
     <%= javascript_include_tag :init_facebook %>
     <main>
-      <div class="navtear"></div>
+      <%= partial 'layouts/partials/navbar' %>
       <!-- CONTENT SHOWS HERE -->
       <%= yield %>
     </main>

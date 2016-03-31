@@ -4,6 +4,12 @@ $form-color: #000;
   margin-top: 2%;
 }
 
+.brand-img{
+  width: 100%;
+  max-width: 120px;
+  padding: 15px;
+}
+
 .logo{
   opacity: .7;
   -ms-transform: rotate(3deg); /* IE 9 */
@@ -175,10 +181,20 @@ footer:before{
   margin-right: 8px;
 }
 
-.navtear{
+nav{
+  margin-bottom: 100px;
+}
+
+.nav-wrapper{
+  position: relative;
+  z-index: 9999;
+}
+
+nav:after{
+  content: "";
   background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/blacklines2.png');
   background-repeat: repeat;
-  position: relative;
+  position: absolute;
   margin-top: -122px;
   height: 187px;
   width: 100%;
@@ -198,6 +214,9 @@ footer:before{
 
 
 @media #{$small-and-down} {
+  .brand-img{
+    margin-top: -5px;
+  }
   .album-info{
     h3{
       font-size: 2.92rem;
