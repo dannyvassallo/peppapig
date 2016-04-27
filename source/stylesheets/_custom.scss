@@ -1,7 +1,18 @@
 $form-color: #000;
 
 .header{
-  margin-top: 2%;
+  // margin-top: 2%;
+  position: relative;
+}
+
+.promo{
+  position: relative;
+  z-index: 9999999;
+}
+
+.container{
+  width: 100% !important;
+  background-color: #69a77e;
 }
 
 .brand-img{
@@ -139,37 +150,38 @@ textarea:focus, input:focus {
     color: $form-color;
 }
 
-footer{
-  z-index: 9;
-  background-color: black !important;
-  h1, img{
-    z-index: 11;
-  }
-  .row{
-    position: relative;
-    z-index: 999999999999999999999;
-  }
-}
+// footer{
+//   z-index: 9;
+//   background-color: black !important;
+//   h1, img{
+//     z-index: 11;
+//   }
+//   .row{
+//     position: relative;
+//     z-index: 999999999999999999999;
+//   }
+// }
 
-main{
-  margin-bottom: 100px;
-}
+// main{
+//   margin-bottom: 100px;
+// }
 
-footer:before{
-  content: "";
-  background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/blacklines.png');
-  background-repeat: repeat;
-  position: absolute;
-  margin-top: -122px;
-  height: 187px;
-  width: 100%;
-  z-index: 10;
-}
+// footer:before{
+//   content: "";
+//   background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/blacklines.png');
+//   background-repeat: repeat;
+//   position: absolute;
+//   margin-top: -122px;
+//   height: 187px;
+//   width: 100%;
+//   z-index: 10;
+// }
 
 // dropdown
 
 .dropdown-content li>span {
   color: $form-color;
+  z-index: 99999999;
 }
 
 .tix{
@@ -289,7 +301,7 @@ nav:after{
 }
 
 #tour-dates{
-  z-index: -1;
+  // z-index: -1;
   p{
     display: inline;
   }
@@ -303,4 +315,24 @@ nav:after{
   position: absolute !important;
   right: 0;
   top: -7px;
+}
+
+.row{
+  margin-bottom: 0 !important;
+}
+
+.page-footer{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.clouds{
+  position: absolute;
+  top: 0;
+  height: 80%;
+  background-color: blue;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
