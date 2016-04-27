@@ -287,3 +287,19 @@ nav:after{
   width: 100%;
   height: auto;
 }
+
+#tour-dates{
+  p{
+    display: inline;
+  }
+}
+
+.collection-item div{
+  position: relative;
+}
+
+.secondary-content{
+  position: absolute !important;
+  right: 0;
+  top: -7px;
+}

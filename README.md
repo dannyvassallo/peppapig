@@ -1,4 +1,4 @@
-#Mayday Parade 2016
+#Fearless Warped 2016
 
 ####What does it do?
 This boilerplate is set up to increase my workflow. Hopefully, this can also help you on your way.
@@ -21,16 +21,16 @@ There is also a partial/template for meta info on most social networks.
 ####Getting Started
 Clone the repo using the GUI or terminal. To do so in terminal, use the following:
 ```shell
-git clone https://github.com/dannyvassallo/mayday.git
-cd mayday
+git clone https://github.com/dannyvassallo/fearlesswarped2016.git
+cd fearlesswarped2016
 ```
 
-From the "mayday" directory, install the gems by running the following:
+From the "fearlesswarped2016" directory, install the gems by running the following:
 ```shell
 bundle install
 ```
 
-To fire up the server while in the "mayday" directory use this command:
+To fire up the server while in the "fearlesswarped2016" directory use this command:
 ```shell
 middleman s
 ```
@@ -46,7 +46,7 @@ If you find yourself curious as to what directory you are in use the following i
 ```shell
 pwd
 ```
-It should turn up "mayday"
+It should turn up "fearlesswarped2016"
 
 ####Analytics Setup
 
