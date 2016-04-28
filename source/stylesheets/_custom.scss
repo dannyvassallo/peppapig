@@ -478,3 +478,12 @@ nav:after{
 .pad-top{
   padding-top: 5%;
 }
+
+.page-footer{
+  .container{
+    .row{
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+  }
+}
