@@ -43,15 +43,15 @@ $form-color: #000;
 }
 
 .video-container{
-  -ms-transform: rotate(-1deg); /* IE 9 */
-  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
-  transform: rotate(-1deg);
+  // -ms-transform: rotate(-1deg); /* IE 9 */
+  // -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  // transform: rotate(-1deg);
 }
 
 #contest-form{
-  -ms-transform: rotate(1deg); /* IE 9 */
-  -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
-  transform: rotate(1deg);
+  // -ms-transform: rotate(1deg); /* IE 9 */
+  // -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+  // transform: rotate(1deg);
 }
 
 .valign{
@@ -71,10 +71,10 @@ $form-color: #000;
 }
 
 body{
-  font-family:'AmericanTypewriter-Bold';
   text-transform: uppercase;
   // background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/paperbg.jpg');
   // background-repeat: repeat;
+  font-family: 'lpsaturniaw00-regularregular';
   background-color: black;
 }
 
@@ -356,6 +356,7 @@ nav:after{
   #border-wrap{
     // border-left: 80px solid black;
     // border-right: 80px solid black;
+    border-style: solid;
     border-top: 0;
     border-bottom: 0;
     border-width:0 80px;
@@ -379,7 +380,7 @@ nav:after{
   left: 0;
   bottom: 0;
   z-index: -2;
-  opacity: 0.3
+  opacity: 0.2
 }
 
 .cloud-image-bg{
@@ -393,5 +394,5 @@ nav:after{
   height: 100%;
   position: fixed;
   z-index: -1;
-  opacity: 0.2
+  opacity: 0.1
 }
