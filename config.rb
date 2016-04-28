@@ -1,7 +1,3 @@
-
-activate :google_analytics do |ga|
-  ga.tracking_id = ''
-end
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -50,7 +46,7 @@ configure :build do
   # Minify CSS on build
   activate :minify_css
   # Minify HTML on build
-  # activate :minify_html
+  activate :minify_html
   # Minify Javascript on build
   activate :minify_javascript
 end
