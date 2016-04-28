@@ -13,41 +13,60 @@
 
 h1 {
   font-family: 'lpsaturniaw00-regularregular';
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
+  font-size: 8vw;
+  margin: 0 auto !important;
 }
-h3 {
+h2 {
   font-family: 'lpsaturniaw00-regularregular';
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 15.4px;
+  font-size: 3vw;
+  margin: 0 auto !important;
 }
-p {
+h5 {
   font-family: 'lpsaturniaw00-regularregular';
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 1.8vw;
+  margin: 0 auto !important;
 }
-blockquote {
-  font-family: 'lpsaturniaw00-regularregular';
-  font-size: 21px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 30px;
+
+@media (min-width: 1546px){
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  h5 {
+    font-size: 0.8vw;
+  }
 }
-pre {
-  font-family: 'lpsaturniaw00-regularregular';
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 18.5714px;
-}
+// h3 {
+//   font-family: 'lpsaturniaw00-regularregular';
+//   font-size: 14px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 500;
+//   line-height: 15.4px;
+// }
+// p {
+//   font-family: 'lpsaturniaw00-regularregular';
+//   font-size: 14px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 400;
+//   line-height: 20px;
+// }
+// blockquote {
+//   font-family: 'lpsaturniaw00-regularregular';
+//   font-size: 21px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 400;
+//   line-height: 30px;
+// }
+// pre {
+//   font-family: 'lpsaturniaw00-regularregular';
+//   font-size: 13px;
+//   font-style: normal;
+//   font-variant: normal;
+//   font-weight: 400;
+//   line-height: 18.5714px;
+// }

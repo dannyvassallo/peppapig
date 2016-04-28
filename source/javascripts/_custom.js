@@ -85,18 +85,23 @@ $('input').focus(function(){
 });
 
 
-function resizeAlbumInfo(){
-  $('.album-info').height($('.albummini').height());
-  $('.album-info .valign-wrapper').height($('.albummini').height());
+function resizeSectionHeader(){
+  $('.medwarped').height($('.tourdatetitle').height());
+  $('.center-area').each(function(){
+    $(this).next('.record').height($(this).height());
+    $(this).prev('.record').height($(this).height());
+  });
 }
 
 $(function(){
-  resizeAlbumInfo();
-  $('.albummini').on('load', function(){
-    resizeAlbumInfo();
+  resizeSectionHeader();
+  $('.record').on('load', function(){
+    resizeSectionHeader();
   });
 });
 
 $(window).resize(function(){
-  resizeAlbumInfo();
+  resizeSectionHeader();
 });
+
+
