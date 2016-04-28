@@ -6,15 +6,15 @@ var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
 var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
 //iOS//
 if(iPadAgent || iPodAgent){
-  currentDevice = "iDevice"
+  currentDevice = "iDevice";
 }
 //Android//
 else if(AndroidAgent){
-  currentDevice = "Android"
+  currentDevice = "Android";
 }
 //Other//
 else{
-  currentDevice = "Computer"
+  currentDevice = "Computer";
 }
 
 $(function(){
