@@ -1,19 +1,31 @@
-$color: black;
+$color: rgb(213,197,184);
 
 .dcsns-toolbar{
   display: none;
 }
 .stream li{
-  background-color: rgba(0,0,0,0.7);
+  background-color: $color;
   color: white;
 }
 .section-intro{
   background-color: black !important;
   color: $color !important;
 }
-.section-text{
-  color: $color;
+.section-text ,.twitter-user, a, .section-user a{
+  color: #717171 !important;
 }
+
+// @media (min-width: 1340px){
+//   .stream{
+//     margin-left: 10% !important;
+//   }
+// }
+
+// @media (min-width: 1440px){
+//   .stream{
+//     margin-left: 4% !important;
+//   }
+// }
 
 // @media (max-width: 1200px) {
 //   .dcsns-content {

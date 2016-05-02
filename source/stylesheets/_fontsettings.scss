@@ -27,6 +27,26 @@ h5 {
   margin: 0 auto !important;
 }
 
+@media (max-width: 640px){
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h5 {
+    font-size: 4vw;
+  }
+  .band-wrap{
+    h5{
+     font-size: 3.2vw;
+    }
+  }
+  .band-wrap h5:first-child{
+    margin-bottom: 1% !important;
+  }
+}
+
 @media (min-width: 1546px){
   h1 {
     font-size: 6vw;
@@ -38,6 +58,7 @@ h5 {
     font-size: 0.8vw;
   }
 }
+
 // h3 {
 //   font-family: 'lpsaturniaw00-regularregular';
 //   font-size: 14px;

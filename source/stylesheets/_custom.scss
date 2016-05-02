@@ -2,6 +2,10 @@ $grey: #717171;
 $beige: #d5c5b8;
 $form-color: $grey;
 
+body{
+  overflow-x: hidden;
+}
+
 #contest-form{
   background-color: $beige;
   padding: 2%;
