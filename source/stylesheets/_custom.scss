@@ -1,4 +1,47 @@
-$form-color: #000;
+$grey: #717171;
+$beige: #d5c5b8;
+$form-color: $grey;
+
+body{
+  overflow-x: hidden;
+}
+
+#contest-form{
+  background-color: $beige;
+  padding: 2%;
+  border: 8px solid $grey !important;
+  border-radius: 5px;
+  color: $grey;
+  a{
+    color: white;
+  }
+  .btn{
+    background-color: $grey !important;
+  }
+}
+
+.collection{
+  border: 8px solid $grey;
+  background-color: $beige;
+  color: $grey;
+  border-bottom: 0 !important;
+  .collection-item, .collection-header{
+    border-bottom: 8px solid $grey !important;
+    border-top: 0 !important;
+    background-color: $beige !important;
+    padding: 20px 20px !important;
+    color: $grey !important;
+    .tix{
+      background-color: $grey !important;
+      i{color: $beige !important;}
+    }
+  }
+}
+
+#border-wrap{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .header{
   // margin-top: 2%;
@@ -7,7 +50,7 @@ $form-color: #000;
 
 .promo{
   position: relative;
-  z-index: 9999999;
+  z-index: 999;
 }
 
 .container{
@@ -38,15 +81,15 @@ $form-color: #000;
 }
 
 .video-container{
-  -ms-transform: rotate(-1deg); /* IE 9 */
-  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
-  transform: rotate(-1deg);
+  // -ms-transform: rotate(-1deg); /* IE 9 */
+  // -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  // transform: rotate(-1deg);
 }
 
 #contest-form{
-  -ms-transform: rotate(1deg); /* IE 9 */
-  -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
-  transform: rotate(1deg);
+  // -ms-transform: rotate(1deg); /* IE 9 */
+  // -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+  // transform: rotate(1deg);
 }
 
 .valign{
@@ -66,10 +109,11 @@ $form-color: #000;
 }
 
 body{
-  font-family:'AmericanTypewriter-Bold';
   text-transform: uppercase;
-  background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/paperbg.jpg');
-  background-repeat: repeat;
+  // background-image: url('https://s3.amazonaws.com/myfangate.com/mayday2016/paperbg.jpg');
+  // background-repeat: repeat;
+  font-family: 'lpsaturniaw00-regularregular';
+  background-color: black;
 }
 
 #hidden_iframe{
@@ -150,17 +194,9 @@ textarea:focus, input:focus {
     color: $form-color;
 }
 
-// footer{
-//   z-index: 9;
-//   background-color: black !important;
-//   h1, img{
-//     z-index: 11;
-//   }
-//   .row{
-//     position: relative;
-//     z-index: 999999999999999999999;
-//   }
-// }
+footer.page-footer{
+  background-color: transparent !important;
+}
 
 // main{
 //   margin-bottom: 100px;
@@ -302,6 +338,7 @@ nav:after{
 
 #tour-dates{
   // z-index: -1;
+  border-radius: 5px;
   p{
     display: inline;
   }
@@ -330,9 +367,127 @@ nav:after{
   position: absolute;
   top: 0;
   height: 80%;
-  background-color: blue;
+  background: rgb(128,183,206); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(128,183,206,1) 0%, rgba(176,210,224,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(128,183,206,1) 0%,rgba(176,210,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(128,183,206,1) 0%,rgba(176,210,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80b7ce', endColorstr='#b0d2e0',GradientType=0 ); /* IE6-9 */
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 0;
+}
+
+.cloud-image{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/rdim360/clouds.png');
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+}
+
+
+@media (min-width: 1280px){
+  #border-wrap{
+    // border-left: 80px solid black;
+    // border-right: 80px solid black;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-width:0 80px;
+    -o-border-image: url('https://s3.amazonaws.com/myfangate.com/rdim360/borderimg.png') 0 80 0 80 repeat;
+    -moz-border-image: url('https://s3.amazonaws.com/myfangate.com/rdim360/borderimg.png') 0 80 0 80 repeat;
+    border-image: url('https://s3.amazonaws.com/myfangate.com/rdim360/borderimg.png') 0 80 0 80 repeat;
+    box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.2);
+  }
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 2px #386B80;
+}
+
+.cloud-bg{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: rgb(128,183,206); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(128,183,206,1) 0%, rgba(176,210,224,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(128,183,206,1) 0%,rgba(176,210,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(128,183,206,1) 0%,rgba(176,210,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80b7ce', endColorstr='#b0d2e0',GradientType=0 ); /* IE6-9 */
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+  opacity: 0.2
+}
+
+.cloud-image-bg{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/rdim360/clouds.png');
+  background-repeat: repeat;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.1
+}
+
+.headline{
+  position: relative;
+  z-index: 9999;
+}
+
+.warped-logo{
+  margin-top: -5%;
+  z-index: -20;
+  position: relative;
+  // margin-bottom: -20%;
+}
+
+.bands{
+  position: relative;
+  z-index: 9999;
+  margin-top: -1%;
+  .band-wrap{
+    margin-bottom: -2%;
+  }
+  h2{
+    margin-bottom: 1% !important;
+  }
+  h5{
+    color: black;
+  }
+}
+
+.section-head{
+  display: block;
+  padding-bottom: 5% !important;
+}
+
+.small-warped{
+  vertical-align: middle;
+  width: 10%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.pad-top{
+  padding-top: 5%;
+}
+
+.page-footer{
+  .container{
+    .row{
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+  }
 }

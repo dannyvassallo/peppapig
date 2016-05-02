@@ -6,15 +6,15 @@ var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
 var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
 //iOS//
 if(iPadAgent || iPodAgent){
-  currentDevice = "iDevice"
+  currentDevice = "iDevice";
 }
 //Android//
 else if(AndroidAgent){
-  currentDevice = "Android"
+  currentDevice = "Android";
 }
 //Other//
 else{
-  currentDevice = "Computer"
+  currentDevice = "Computer";
 }
 
 $(function(){
@@ -85,18 +85,23 @@ $('input').focus(function(){
 });
 
 
-function resizeAlbumInfo(){
-  $('.album-info').height($('.albummini').height());
-  $('.album-info .valign-wrapper').height($('.albummini').height());
+function resizeSectionHeader(){
+  $('.medwarped').height($('.tourdatetitle').height());
+  $('.center-area').each(function(){
+    $(this).next('.record').height($(this).height());
+    $(this).prev('.record').height($(this).height());
+  });
 }
 
 $(function(){
-  resizeAlbumInfo();
-  $('.albummini').on('load', function(){
-    resizeAlbumInfo();
+  resizeSectionHeader();
+  $('.record').on('load', function(){
+    resizeSectionHeader();
   });
 });
 
 $(window).resize(function(){
-  resizeAlbumInfo();
+  resizeSectionHeader();
 });
+
+

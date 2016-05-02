@@ -5,7 +5,7 @@
   //        Facebook API HOOKS       //
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1520962544877525',
+      appId      : '1546907485605938',
       xfbml      : true,
       version    : 'v2.5'
     });
@@ -34,11 +34,11 @@
     {
       // SHARE INFO
       method: 'feed',
-      name: 'Mayday Parade | Share To Win', // name of the product or content you want to share
-      link: 'http://maydayparade.com', // link back to the product or content you are sharing
-      picture: 'https://s3.amazonaws.com/myfangate.com/mayday2016/shareimage.jpg', // path to an image you would like to share with this content
-      caption: 'http://maydayparade.com', // caption
-      description: 'SHARE THE NEW MUSIC VIDEO FOR "LETTING GO" TO WIN WARPED TOUR TICKETS + MORE' // description of your product or content
+      name: '#BEFEARLESS ALL SUMMER LONG ON THIS YEAR\'S WARPED TOUR!', // name of the product or content you want to share
+      link: 'http://fearlesssummer.com', // link back to the product or content you are sharing
+      picture: 'https://s3.amazonaws.com/myfangate.com/fearlesswarped2016/shareimage.jpg', // path to an image you would like to share with this content
+      caption: 'The Fearless Family wants to send you and a friend to a Van\'s Warped Tour Near You!', // caption
+      description: 'Enter your email and choose the Warped Tour date nearest you to win a pair of tickets!' // description of your product or content
     },
     function(response) {
       if (response && response.post_id) {

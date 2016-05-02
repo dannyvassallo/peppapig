@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Fight For Something Tour" %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <%= partial 'partials/meta-seo' %>
     <%= stylesheet_link_tag :site %>
   </head>
@@ -17,7 +17,8 @@
       <!-- CONTENT SHOWS HERE -->
       <%= yield %>
     </main>
-    <%= partial 'layouts/partials/footer' %>
+    <div class="cloud-image-bg"></div>
+    <div class="cloud-bg"></div>
     <%= javascript_include_tag :all %>
   </body>
 </html>
