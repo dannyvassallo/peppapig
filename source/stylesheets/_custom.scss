@@ -51,6 +51,7 @@ body{
 .promo{
   position: relative;
   z-index: 999;
+  margin-bottom: -6%;
 }
 
 .container{
@@ -470,6 +471,8 @@ nav:after{
 .section-head{
   display: block;
   padding-bottom: 5% !important;
+  position: relative;
+  z-index: 99999;
 }
 
 .small-warped{
@@ -490,4 +493,25 @@ nav:after{
       margin: 0 auto;
     }
   }
+}
+
+.contest-wrap{
+  position: relative;
+}
+
+.jarrod{
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+}
+
+.mobile-prizing{
+  position: relative;
+}
+
+.jarrod-mobile{
+  position: absolute;
+  left: 20%;
+  bottom: 6%;
+  width: 20%;
 }
