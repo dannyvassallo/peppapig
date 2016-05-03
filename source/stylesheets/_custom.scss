@@ -2,8 +2,6 @@ $color1: #717171;
 $color2: #d5c5b8;
 $form-color: white;
 
-
-
 .space-out{
   margin-top: 5%;
   margin-bottom: 5%;
@@ -82,14 +80,14 @@ label[for=rules], label[for=emails]{
 .select-wrapper span.caret {
     color: initial;
     position: absolute;
-    right: -4px;
+    right: -5px;
     top: 0;
     font-size: 10px;
     background-color: $grass-green !important;
     color: white !important;
     z-index: 99999;
     width: 50px;
-    height: 46px;
+    height: 100%;
     text-align: center;
     line-height: 50px;
 }
@@ -244,4 +242,11 @@ textarea:focus, input:focus {
 .dropdown-content::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5);
     z-index: 9999999;
+}
+
+
+@media #{$medium-and-down} {
+  .submit{
+    margin-top: 5%;
+  }
 }
