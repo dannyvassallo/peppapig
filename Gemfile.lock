@@ -83,8 +83,6 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
-    middleman-php (0.0.3)
-      middleman-core (>= 3.2.1)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -138,7 +136,6 @@ DEPENDENCIES
   middleman (= 3.3.7)
   middleman-livereload (= 3.1.0)
   middleman-minify-html
-  middleman-php
   tzinfo-data
   wdm (= 0.1.0)
 

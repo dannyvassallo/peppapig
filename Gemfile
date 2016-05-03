@@ -16,4 +16,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'materialize-sass'
 gem 'jquery-middleman'
 gem 'middleman-minify-html'
-gem 'middleman-php'
+# gem 'middleman-php'

@@ -85,23 +85,3 @@ $('input').focus(function(){
 });
 
 
-function resizeSectionHeader(){
-  $('.medwarped').height($('.tourdatetitle').height());
-  $('.center-area').each(function(){
-    $(this).next('.record').height($(this).height());
-    $(this).prev('.record').height($(this).height());
-  });
-}
-
-$(function(){
-  resizeSectionHeader();
-  $('.record').on('load', function(){
-    resizeSectionHeader();
-  });
-});
-
-$(window).resize(function(){
-  resizeSectionHeader();
-});
-
-

@@ -1,14 +1,8 @@
 @charset "utf-8";
 @import "normalize";
-// BEGIN MATERIALIZE
 @import "materialize/components/color";
-// You can customize the theme colors here:
 $primary-color: color("grey", "darken-4") !default;
 @import 'materialize';
-// END MATERIALIZE
 @import "fontsettings";
 @import "stickyfooter";
-// @import "animation";
-@import "vendor/dcsns_wall";
-@import "social-wall-overrides";
 @import "custom";
