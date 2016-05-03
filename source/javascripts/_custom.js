@@ -84,4 +84,8 @@ $('input').focus(function(){
   }
 });
 
-
+$(function(){
+  $(document).on('click', '.caret', function(){
+    $('.select-dropdown').trigger('click');
+  });
+});
