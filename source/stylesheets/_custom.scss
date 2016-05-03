@@ -1,19 +1,26 @@
 $color1: #717171;
 $color2: #d5c5b8;
-$form-color: $color1;
+$form-color: white;
 
+.space-out{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.input-field{
+  margin-left: -5px;
+}
 
 #contest-form{
-  background-color: $color2;
-  padding: 2%;
-  border: 8px solid $color1 !important;
-  border-radius: 5px;
-  color: $color1;
+  @extend .peppa-border;
+  @extend .peppa-shadow;
+  background-color: $dark-blue;
+  color: white;
   a{
     color: white;
   }
   .btn{
-    background-color: $color1 !important;
+    background-color: $grass-green !important;
   }
 }
 
@@ -49,10 +56,43 @@ $form-color: $color1;
 
 // FORMS
 
+.input-field label.active {
+  font-size: 0.8rem;
+  transform: translateY(-180%);
+  color: white;
+}
+
 /* label color */
- .input-field label {
-   color: $form-color;
- }
+.input-field label {
+  color: purple;
+  padding-left: 1%;
+}
+
+label[for=rules], label[for=emails]{
+  color: white !important;
+  padding-left: 30px !important;
+  margin-bottom: 3%;
+}
+
+.select-wrapper span.caret {
+    color: initial;
+    position: absolute;
+    right: -4px;
+    top: 0;
+    font-size: 10px;
+    background-color: $grass-green !important;
+    color: white !important;
+    z-index: 99999;
+    width: 50px;
+    height: 46px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid transparent !important;
+    box-shadow: 0 1px 0 0 transparent !important;
+}
  /* label focus color */
  .input-field input[type=text]:focus + label {
    color: $form-color;
@@ -80,13 +120,18 @@ $form-color: $color1;
 span.error{
   position: relative;
   display: block;
-  @extend .red-text;
+  color: $inner-red;
 }
 
 .error-box{
-  height: 25px;
+  // height: 25px;
 }
 
+input{
+  background-color: white !important;
+  color: purple !important;
+  padding-left: 1% !important;
+}
 
 input:not([type]):focus:not([readonly]),
 input:not([email]):focus:not([readonly]){
@@ -94,14 +139,44 @@ input:not([email]):focus:not([readonly]){
   box-shadow: 0 1px 0 0 $form-color;
 }
 
-input:not([type]):focus:not([readonly])+label,
+label.active{
+  color: white !important;
+}
+
 input:not([email]):focus:not([readonly])+label,{
-  color: $form-color;
+  // color: purple !important;
 }
 
 input[type="checkbox"].filled-in:checked+label:after {
-  border: 2px solid $form-color;
-  background-color: $form-color;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+input[type="checkbox"].filled-in:not(:checked)+label:after{
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+input:not([type]),
+input[type=email],
+.select-wrapper input.select-dropdown{
+  border-bottom: 1px solid white;
+}
+
+.caret{
+  color: white !important;
+  cursor: pointer;
+}
+
+.dropdown-content{
+  @extend .peppa-shadow;
+  @extend .peppa-border;
+}
+
+.select-dropdown{
+  li span{
+    color: $dark-blue !important;
+  }
 }
 
 input, select, textarea{
