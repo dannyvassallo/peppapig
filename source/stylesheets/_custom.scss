@@ -2,6 +2,8 @@ $color1: #717171;
 $color2: #d5c5b8;
 $form-color: white;
 
+
+
 .space-out{
   margin-top: 5%;
   margin-bottom: 5%;
@@ -14,6 +16,7 @@ $form-color: white;
 #contest-form{
   @extend .peppa-border;
   @extend .peppa-shadow;
+  padding: 0 3%;
   background-color: $dark-blue;
   color: white;
   a{
@@ -25,19 +28,21 @@ $form-color: white;
 }
 
 .collection{
-  border: 8px solid $color1;
-  background-color: $color2;
-  color: $color1;
+  // border: 8px solid $color1;
+  background-color: $dark-blue !important;
+  color: white !important;
+  @extend .peppa-border;
+  @extend .peppa-shadow;
   border-bottom: 0 !important;
   .collection-item, .collection-header{
-    border-bottom: 8px solid $color1 !important;
+    border-bottom: 8px solid white !important;
     border-top: 0 !important;
-    background-color: $color2 !important;
+    background-color: $dark-blue !important;
     padding: 20px 20px !important;
-    color: $color1 !important;
+    color: white !important;
     .tix{
-      background-color: $color1 !important;
-      i{color: $color2 !important;}
+      background-color: $grass-green !important;
+      i{color: white !important;}
     }
   }
 }
@@ -169,6 +174,9 @@ input[type=email],
 }
 
 .dropdown-content{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 500px;
   @extend .peppa-shadow;
   @extend .peppa-border;
 }
@@ -208,8 +216,6 @@ textarea:focus, input:focus {
 }
 
 #tour-dates{
-  // z-index: -1;
-  border-radius: 5px;
   p{
     display: inline;
   }
@@ -223,4 +229,19 @@ textarea:focus, input:focus {
   position: absolute !important;
   right: 0;
   top: -7px;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 12px;
+    z-index: 9999999;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    z-index: 9999999;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5);
+    z-index: 9999999;
 }
