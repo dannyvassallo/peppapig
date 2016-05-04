@@ -112,17 +112,18 @@ jQuery(window).load(function() {
 
 
 // scroller
-function scrollerClick(target, location){
-  $(target).on('click', function(e) {
+function scrollerClick(targetEl, locationEl){
+  $(targetEl).on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({
-        scrollTop: $(location).offset().top
+        scrollTop: $(locationEl).offset().top
     }, 1000);
+    $('.button-collapse').sideNav('hide');
   });
 }
 
 
 $(function(){
-  scrollerClick("#contest-scroller", "#contest-form");
-  scrollerClick('#tour-scroller','#tour-dates');
+  scrollerClick(".contest-scroller", "#contest-form");
+  scrollerClick('.tour-scroller','#tour-dates');
 });
