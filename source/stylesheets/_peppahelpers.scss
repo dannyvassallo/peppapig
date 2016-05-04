@@ -41,3 +41,19 @@
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+@media (max-width: 640px){
+  .peppa-headline-pink, .peppa-headline-blue{
+    font-size: 7vw;
+    -webkit-text-fill-color: none; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: none;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1137px){
+  .peppa-headline-pink, .peppa-headline-blue{
+    font-size: 5vw;
+  }
+}
