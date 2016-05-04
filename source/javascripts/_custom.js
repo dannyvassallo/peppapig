@@ -101,3 +101,11 @@ $(function(){
   $('select').siblings('input.select-dropdown').on('mousedown', onMouseDown);
 
 });
+
+
+// preloader
+
+// makes sure the whole site is loaded
+jQuery(window).load(function() {
+    jQuery("#preloader").delay(2000).fadeOut("slow");
+});

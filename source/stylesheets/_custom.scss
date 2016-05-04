@@ -375,3 +375,33 @@ nav{
     border-radius: 0;
   }
 }
+
+#preloader  {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: $sky-blue;
+     z-index: 99;
+    height: 100%;
+    z-index: 9999999999999999;
+    .container .row{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+ }
+
+.loaderimg {
+    width: 174px;
+    height: 208px;
+    margin: 0 auto !important;
+    background-image: url('https://s3.amazonaws.com/myfangate.com/peppapig/mudpuddle.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+ }
