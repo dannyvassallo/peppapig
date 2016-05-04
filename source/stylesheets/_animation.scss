@@ -92,3 +92,122 @@
     -moz-transform: rotate(4deg);
   }
 }
+
+
+.pulse{
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  1% {
+    transform: scale(0.9);
+  }
+  5% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  1% {
+    -webkit-transform: scale(0.9);
+  }
+  5% {
+    -webkit-transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.9);
+  }
+  15% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+  }
+  1% {
+    -moz-transform: scale(0.9);
+  }
+  5% {
+    -moz-transform: scale(1);
+  }
+  10% {
+    -moz-transform: scale(0.9);
+  }
+  15% {
+    -moz-transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+// Kill on mobile
+
+@media (max-width: 640px){
+  * {
+
+   // /*CSS transitions*/
+
+   // -o-transition-property: none !important;
+
+   // -moz-transition-property: none !important;
+
+   // -ms-transition-property: none !important;
+
+   // -webkit-transition-property: none !important;
+
+   // transition-property: none !important;
+
+   /*CSS transforms*/
+
+   // -o-transform: none !important;
+
+   // -moz-transform: none !important;
+
+   // -ms-transform: none !important;
+
+   // -webkit-transform: none !important;
+
+   // transform: none !important;
+
+   /*CSS animations*/
+
+   -webkit-animation: none !important;
+
+   -moz-animation: none !important;
+
+   -o-animation: none !important;
+
+   -ms-animation: none !important;
+
+   animation: none !important;
+
+  }
+}

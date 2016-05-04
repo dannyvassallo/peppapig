@@ -109,3 +109,20 @@ $(function(){
 jQuery(window).load(function() {
     jQuery("#preloader").delay(2000).fadeOut("slow");
 });
+
+
+// scroller
+function scrollerClick(target, location){
+  $(target).on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(location).offset().top
+    }, 1000);
+  });
+}
+
+
+$(function(){
+  scrollerClick("#contest-scroller", "#contest-form");
+  scrollerClick('#tour-scroller','#tour-dates');
+});

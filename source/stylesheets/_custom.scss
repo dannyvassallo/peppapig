@@ -430,3 +430,16 @@ nav{
 .reg-text-shadow{
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 }
+
+.prize-text{
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  transform: rotate(-1deg);
+  color: $inner-pink !important;
+}
+
+.enter{
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}

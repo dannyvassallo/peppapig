@@ -27,6 +27,9 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   text-shadow: 1px 6px 0px rgba(0,0,0,0.3);
+  -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+  transform: rotate(-2deg);
 }
 
 .peppa-headline-blue{
@@ -35,6 +38,9 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   text-shadow: 1px 6px 0px rgba(0,0,0,0.3);
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+  transform: rotate(1deg);
 }
 
 .no-margin-tb{
@@ -49,6 +55,13 @@
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: none;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  }
+  h1,h2,h3,h4,h5{
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
   }
 }
 
