@@ -5,7 +5,7 @@
   //        Facebook API HOOKS       //
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1546907485605938',
+      appId      : '1701576750099148',
       xfbml      : true,
       version    : 'v2.5'
     });
