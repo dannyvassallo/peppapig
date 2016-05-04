@@ -34,11 +34,11 @@
     {
       // SHARE INFO
       method: 'feed',
-      name: '#BEFEARLESS ALL SUMMER LONG ON THIS YEAR\'S WARPED TOUR!', // name of the product or content you want to share
-      link: 'http://fearlesssummer.com', // link back to the product or content you are sharing
-      picture: 'https://s3.amazonaws.com/myfangate.com/fearlesswarped2016/shareimage.jpg', // path to an image you would like to share with this content
-      caption: 'The Fearless Family wants to send you and a friend to a Van\'s Warped Tour Near You!', // caption
-      description: 'Enter your email and choose the Warped Tour date nearest you to win a pair of tickets!' // description of your product or content
+      name: 'Win Tickets to Peppa Pig LIVE! Peppa Pig\'s Big Splash!', // name of the product or content you want to share
+      link: 'http://peppapig.herokuapp.com', // link back to the product or content you are sharing
+      picture: 'https://s3.amazonaws.com/myfangate.com/peppapig/shareimage.jpg', // path to an image you would like to share with this content
+      caption: 'Peppa Pig Wants to send you to a Peppa Pig LIVE! tour date near you!', // caption
+      description: 'Enter your email, choose the closest tour, and share to win tickets!' // description of your product or content
     },
     function(response) {
       if (response && response.post_id) {
