@@ -33,6 +33,19 @@
   }
 }
 
+@-moz-keyframes tossing {
+  0% {
+    -moz-transform: rotate(-4deg);
+  }
+  50% {
+    -moz-transform: rotate(4deg);
+  }
+  100% {
+    -moz-transform: rotate(-4deg);
+  }
+}
+
+
 .tossing-alt{
   animation-name: tossing-alt;
   -webkit-animation-name: tossing-alt;
@@ -65,5 +78,17 @@
   }
   100% {
     -webkit-transform: rotate(4deg);
+  }
+}
+
+@-moz-keyframes tossing-alt {
+  0% {
+    -moz-transform: rotate(4deg);
+  }
+  60% {
+    -moz-transform: rotate(-4deg);
+  }
+  100% {
+    -moz-transform: rotate(4deg);
   }
 }
