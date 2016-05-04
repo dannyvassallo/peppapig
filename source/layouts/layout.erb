@@ -13,12 +13,14 @@
 
   <body class="<%= page_classes %>">
     <%= javascript_include_tag :init_facebook %>
+    <%= partial 'layouts/partials/navbar' %>
     <main>
       <!-- CONTENT SHOWS HERE -->
       <%= yield %>
       <div class="sky"></div>
       <div class="grass"></div>
     </main>
+    <%= partial 'layouts/partials/footer' %>
     <%= javascript_include_tag :all %>
   </body>
 </html>

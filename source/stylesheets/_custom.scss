@@ -2,6 +2,11 @@ $color1: #717171;
 $color2: #d5c5b8;
 $form-color: white;
 
+main{
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
 .space-out{
   margin-top: 5%;
   margin-bottom: 5%;
@@ -248,5 +253,68 @@ textarea:focus, input:focus {
 @media #{$medium-and-down} {
   .submit{
     margin-top: 5%;
+  }
+}
+
+.sky{
+  background-color: $sky-blue;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -10;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/peppapig/clouds.png');
+  background-repeat: repeat;
+}
+
+.grass{
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  z-index: -10;
+  &::before{
+    @extend .peppa-shadow-up;
+    content: '';
+    height: 1200px;
+    width: 150%;
+    border-radius: 600px 600px 0 0;
+    -moz-border-radius: 600px 600px 0 0;
+    -webkit-border-radius: 600px 600px 0 0;
+    background: #70ab4f;
+    z-index: -9;
+    position: absolute;
+    top: -20%;
+    left: -24%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('https://s3.amazonaws.com/myfangate.com/peppapig/flowers.png');
+    background-repeat: repeat;
+  }
+}
+
+footer{
+  &::before{
+    content: '';
+    background-image: url("https://s3.amazonaws.com/myfangate.com/peppapig/whitewaves.png");
+    height: 54px;
+    width: 100%;
+    background-repeat: repeat-x;
+    margin-top: -54px;
+    position: absolute;
+  }
+}
+
+nav{
+  &::after{
+    content: '';
+    background-image: url("https://s3.amazonaws.com/myfangate.com/peppapig/whitewavesdown.png");
+    height: 54px;
+    width: 100%;
+    background-repeat: repeat-x;
+    position: absolute;
+    margin-top: -22px;
   }
 }

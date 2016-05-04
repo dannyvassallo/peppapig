@@ -2,9 +2,21 @@
   box-shadow: 3.5px 6.062px 0px 0px rgba(1, 2, 2, 0.2) !important;
 }
 
+.peppa-shadow-up{
+  box-shadow: 10.5px -7px 0px 0px rgba(0,0,0,0.05) !important;
+}
+
 .peppa-border{
   border-style: solid !important;
   border-width: 5px !important;
   border-color: white !important;
   border-radius: 14px !important;
+}
+
+.peppa-pink-text{
+  color: $headline-pink !important;
+}
+
+.peppa-blue-text{
+  color: $dark-blue !important;
 }
