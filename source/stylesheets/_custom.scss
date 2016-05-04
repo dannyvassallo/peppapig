@@ -443,3 +443,8 @@ nav{
   -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
   transform: rotate(2deg);
 }
+
+.break-word{
+  word-wrap: break-word !important;
+  width: 100% !important;
+}
