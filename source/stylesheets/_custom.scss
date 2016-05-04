@@ -333,3 +333,45 @@ nav{
   z-index: -1;
 }
 
+.shadowed {
+  -webkit-filter: drop-shadow(2px 6px 0px rgba(0,0,0,0.2));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.pig-container{
+  position: relative;
+}
+
+.peppapig{
+  width: 20%;
+  position: absolute;
+  left: 4%;
+  img {
+    margin-top: -140%;
+  }
+}
+
+.george{
+  position: absolute;
+  right: -2%;
+  width: 30%;
+  float: right;
+  img {
+    margin-top: -160%;
+  }
+}
+
+.peppamud{
+  position: absolute;
+  position: absolute;
+  top: -70%;
+  left: 5%;
+}
+
+@media #{$medium-and-down} {
+  .grass:before{
+    border-radius: 0;
+  }
+}

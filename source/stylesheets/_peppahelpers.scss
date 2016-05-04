@@ -20,3 +20,24 @@
 .peppa-blue-text{
   color: $dark-blue !important;
 }
+
+.peppa-headline-pink{
+  color: $headline-pink;
+  -webkit-text-fill-color: $headline-pink; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 1px 6px 0px rgba(0,0,0,0.3);
+}
+
+.peppa-headline-blue{
+  color: $dark-blue;
+  -webkit-text-fill-color: $dark-blue; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 1px 6px 0px rgba(0,0,0,0.3);
+}
+
+.no-margin-tb{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
