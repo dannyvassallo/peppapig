@@ -38,7 +38,7 @@
       link: 'http://peppapig.herokuapp.com', // link back to the product or content you are sharing
       picture: 'https://s3.amazonaws.com/myfangate.com/peppapig/shareimage.jpg', // path to an image you would like to share with this content
       caption: 'Peppa Pig Wants to send you to a Peppa Pig LIVE! tour date near you!', // caption
-      description: 'Enter your email, choose the closest tour, and share to win tickets!' // description of your product or content
+      description: 'Enter your email, choose the closest tour date, and share to win tickets!' // description of your product or content
     },
     function(response) {
       if (response && response.post_id) {
