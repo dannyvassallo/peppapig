@@ -10,6 +10,8 @@ function checkBrowser(){
     else if(f>-1){
         brwsr = "Firefox";
         $('.shadowed').removeClass('shadowed');
+        $('#top-headline').addClass('firefox-header');
+        $('h1, h2, h3, h4 ,h5, h6').css('text-shadow','1px 1px 0px rgba(0, 0, 0, 0.3)');
     }else if (m9>-1){
         brwsr ="MSIE 9.0";
     }else if (m8>-1){

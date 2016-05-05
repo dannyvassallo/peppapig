@@ -1,4 +1,5 @@
 # activate :php
+activate :autoprefixer
 
 ###
 # Page options, layouts, aliases and proxies
