@@ -151,3 +151,7 @@ function checkForPeppa(){
 $(document).on( 'scroll', function(){
   checkForPeppa();
 });
+
+$(function(){
+  checkForPeppa();
+});
