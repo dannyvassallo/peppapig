@@ -149,9 +149,9 @@ function checkForPeppa(){
 }
 
 $(document).on( 'scroll', function(){
-  checkForPeppa();
+  // checkForPeppa();
 });
 
 $(function(){
-  checkForPeppa();
+  // checkForPeppa();
 });
