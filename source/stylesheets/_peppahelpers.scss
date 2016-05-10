@@ -70,3 +70,8 @@
     font-size: 5vw;
   }
 }
+
+.peppa-btn{
+  @extend .btn;
+  background-color: $dark-blue !important;
+}
