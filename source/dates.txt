@@ -25,7 +25,6 @@
 10/8/16,5:00pm,"Richmond, KY",Eastern Kentucky University - EKU Center for the Arts,http://www.etix.com/ticket/p/4278174/peppa-pig-richmond-eku-center-for-the-arts
 10/9/16,5:00pm,"Columbus, OH",Palace Theatre,http://www.ticketmaster.com/peppa-pig-live-columbus-ohio-10-09-2016/event/0500505ADFE4996F
 10/11/16,6:00pm,"South Bend, IN",Morris Performing Arts Center,http://morriscenter.org/schedule.php?id=339
-10/13/16,6:00pm,"Joliet, IL",Rialto Square Theatre,http://www.ticketmaster.com/peppa-pig-live-joliet-illinois-10-13-2016/event/0700505AF42781DB
 10/14/16,6:00pm,"Merrillville, IN",Star Plaza Theatre,http://www.ticketmaster.com/peppa-pig-live-big-splash-merrillville-indiana-10-14-2016/event/07005061EEE976CA
 10/15/16,5:00pm,"Appleton, WI",Fox Cities Performing Arts Center,http://www.ticketmaster.com/peppa-pig-live-big-splash-appleton-wisconsin-10-15-2016/event/0700505AAAA14EC8
 10/16/16,2:00pm,"Waukegan, IL",Genesee Theatre,http://www.ticketmaster.com/peppa-pig-live-waukegan-illinois-10-16-2016/event/0700505DE97575D1

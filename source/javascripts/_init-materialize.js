@@ -2,4 +2,5 @@
 
 // Init side nav
 $(".button-collapse").sideNav();
+$(".modal-trigger").leanModal();
 // Init select

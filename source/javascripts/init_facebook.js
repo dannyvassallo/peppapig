@@ -35,7 +35,7 @@
       // SHARE INFO
       method: 'feed',
       name: 'Win Tickets to Peppa Pig LIVE! Peppa Pig\'s Big Splash!', // name of the product or content you want to share
-      link: 'http://peppapig.herokuapp.com', // link back to the product or content you are sharing
+      link: 'http://peppapiglivecontest.com', // link back to the product or content you are sharing
       picture: 'https://s3.amazonaws.com/myfangate.com/peppapig/shareimage.jpg', // path to an image you would like to share with this content
       caption: 'Peppa Pig Wants to send you to a Peppa Pig LIVE! tour date near you!', // caption
       description: 'Enter your email, choose the closest tour date, and share to win tickets!' // description of your product or content
